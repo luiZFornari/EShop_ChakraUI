@@ -1,4 +1,4 @@
-# Eshop Material UI
+# Eshop Chakra UI
 
 Sistema desenvolvido para estudo no projeto de pesquisa intitulado:
 Estudo Comparativo entre Bibliotecas de Componentes de Interface de Usuário para ReactJS.
