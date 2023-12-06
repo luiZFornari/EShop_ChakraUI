@@ -1,9 +1,4 @@
-import {
-  Alert,
-  AlertDescription,
-  AlertIcon,
-  AlertTitle,
-} from "@chakra-ui/react";
+import { Alert, AlertDescription, AlertIcon } from "@chakra-ui/react";
 import { useState, useEffect } from "react";
 
 const Alerta = ({ alerta }) => {
@@ -13,13 +8,13 @@ const Alerta = ({ alerta }) => {
     setExibir(true);
     setTimeout(() => {
       setExibir(false);
-    }, 4000);
+    }, 5000);
   }, [alerta]);
 
   return (
     <div>
       {alerta.message.length > 0 && exibir && (
-        <Alert status={alerta.status == true ? "error" : "success"} m="1">
+        <Alert status={alerta.status === true ? "error" : "success"} m="1">
           <AlertIcon />
           <AlertDescription>{alerta.message}</AlertDescription>
         </Alert>

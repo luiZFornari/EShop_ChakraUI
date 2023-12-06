@@ -6,6 +6,8 @@ import Sobre from "./componentes/telas/Sobre";
 import ProdutoPublico from "./componentes/telas/home/Home";
 import Login from "./componentes/telas/login/Login";
 import Avaliacao from "./componentes/telas/avaliacao/Avaliacao";
+import Categoria from "./componentes/telas/categoria/Categoria";
+import Produto from "./componentes/telas/produto/Produto";
 
 const router = createBrowserRouter([
   {
@@ -42,15 +44,15 @@ const router = createBrowserRouter([
         index: "true",
         element: <ProdutoPublico />,
       },
-      // {
-      //   path: "categorias",
-      //   element: <Categoria />,
-      // },
-      // {
-      //   path: "produtos",
-      //   element: <ProdutoManutencao />,
-      // },
-      // ,
+      {
+        path: "categoria",
+        element: <Categoria />,
+      },
+      {
+        path: "produto",
+        element: <Produto />,
+      },
+      ,
       {
         path: "produto/:id",
         element: <Avaliacao />,

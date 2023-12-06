@@ -33,7 +33,7 @@ function CampoEntrada({
         maxLength={maxCaracteres}
         errorBorderColor="crimson"
       />
-      {value === "" && requerido === true ? (
+      {requerido && value === "" ? (
         <FormErrorMessage paddingLeft="10px">{msginvalido}</FormErrorMessage>
       ) : (
         <FormHelperText paddingLeft="10px">{msgvalido}</FormHelperText>

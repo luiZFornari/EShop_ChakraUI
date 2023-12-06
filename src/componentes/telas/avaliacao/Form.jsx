@@ -50,14 +50,14 @@ function Form() {
           requerido={true}
           readonly={false}
           maxlength={50}
-          msgvalido="Autor OK"
+          msgvalido="OK certo"
           msginvalido="Informe o autor"
         />
         <CampoEntrada
           label="Email"
           id="email"
           msginvalido="Insira um email "
-          msgvalido="Email Valido "
+          msgvalido="OK certo"
           requerido={true}
           readonly={false}
           name="email"
@@ -75,7 +75,7 @@ function Form() {
           requerido={true}
           readonly={false}
           maxlength={250}
-          msgvalido="Texto OK"
+          msgvalido="OK certo"
           msginvalido="Informe o texto"
         />
         <CampoSelect
@@ -86,7 +86,7 @@ function Form() {
           value={objeto.nota}
           change={handleChange}
           requerido={true}
-          msgvalido="Nota OK"
+          msgvalido="OK certo"
           msginvalido="Informe a nota"
         >
           {notas.map((nota) => (

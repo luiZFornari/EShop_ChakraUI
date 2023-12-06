@@ -1,5 +1,4 @@
-import { Center, Container, Heading, Link, Text } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import { Center, Container, Heading, Text } from "@chakra-ui/react";
 
 function Sobre() {
   return (

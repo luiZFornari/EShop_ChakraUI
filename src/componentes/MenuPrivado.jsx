@@ -1,12 +1,7 @@
 import React from "react";
 import {
-  Link,
   Box,
   Flex,
-  Text,
-  Button,
-  Stack,
-  HStack,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -22,15 +17,11 @@ import {
   MenuDivider,
 } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
-import {
-  ChevronDownIcon,
-  ChevronRightIcon,
-  HamburgerIcon,
-} from "@chakra-ui/icons";
+import { ChevronRightIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Autenticacao from "./seguranca/Autenticacao";
 
 const MenuPrivado = (props) => {
-  const [isSmallScreen] = useMediaQuery("(max-width: 500px)");
+  const [isSmallScreen] = useMediaQuery("(max-width: 550px)");
   const autenticacao = Autenticacao.pegaAutenticacao();
 
   return (
@@ -104,8 +95,8 @@ const MenuPrivado = (props) => {
         ) : (
           <>
             <Box p="6">
-              <Heading size="md" color="white">
-                <Link href="/privado">Eshop</Link>
+              <Heading as="a" href="/privado" size="md" color="white">
+                Eshop
               </Heading>
             </Box>
             <Breadcrumb

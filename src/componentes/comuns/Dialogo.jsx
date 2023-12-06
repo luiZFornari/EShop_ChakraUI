@@ -27,11 +27,7 @@ function Dialogo(props) {
             <Button variant="ghost" mr={3} onClick={() => props.setOpen(false)}>
               Close
             </Button>
-            <Button
-              type="submit"
-              colorScheme="blue"
-              onClick={console.log(props.objeto)}
-            >
+            <Button type="submit" colorScheme="blue">
               Gravar
             </Button>
           </form>

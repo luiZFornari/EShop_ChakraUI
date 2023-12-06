@@ -1,12 +1,7 @@
 import React from "react";
 import {
-  Link,
   Box,
   Flex,
-  Text,
-  Button,
-  Stack,
-  HStack,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
@@ -21,13 +16,12 @@ import {
 } from "@chakra-ui/react";
 import { Outlet } from "react-router-dom";
 import {
-  ChevronDownIcon,
   ChevronRightIcon,
   HamburgerIcon,
 } from "@chakra-ui/icons";
 
 const MenuPublico = (props) => {
-  const [isSmallScreen] = useMediaQuery("(max-width: 500px)");
+  const [isSmallScreen] = useMediaQuery("(max-width: 550px)");
 
   return (
     <div>
@@ -35,7 +29,7 @@ const MenuPublico = (props) => {
         {isSmallScreen ? (
           <>
             <Box p="6">
-              <Heading  as="a"  href="/" size="md" color="white">
+              <Heading as="a" href="/" size="md" color="white">
                 Eshop
               </Heading>
             </Box>
@@ -74,17 +68,17 @@ const MenuPublico = (props) => {
               spacing="8px"
               separator={<ChevronRightIcon color="white" />}
             >
-              <BreadcrumbItem >
+              <BreadcrumbItem>
                 <BreadcrumbLink href="/" color="white">
                   Home
                 </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbItem >
+              <BreadcrumbItem>
                 <BreadcrumbLink href="/sobre" color="white">
                   Sobre
                 </BreadcrumbLink>
               </BreadcrumbItem>
-              <BreadcrumbItem >
+              <BreadcrumbItem>
                 <BreadcrumbLink href="/login" color="white">
                   Login
                 </BreadcrumbLink>
